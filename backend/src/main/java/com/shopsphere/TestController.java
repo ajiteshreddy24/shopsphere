@@ -10,4 +10,9 @@ public class TestController {
     public String test() {
         return "ShopSphere backend is running!";
     }
+
+    @GetMapping("/api/protected-test")
+    public String protectedTest() {
+        return "You are authenticated!";
+    }
 }
